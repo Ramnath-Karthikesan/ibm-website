@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 app.secret_key = 'ThisisaKEy'
 
-CONNECTION_STRING = "mongodb+srv://ramnath2001:ibm123@cluster0.owf41o7.mongodb.net/?retryWrites=true&w=majority"
+CONNECTION_STRING = ""
 client = pymongo.MongoClient(CONNECTION_STRING)
 db = client.get_database('flask')
 user_collection = pymongo.collection.Collection(db, 'user')
